@@ -18,6 +18,7 @@ public class configutlities {
 		String env = p.getProperty("com.env");
 		switch (env) {
 		case "UAT1":
+			//https://api.crypto.com/v2/public/get-candlestick?instrument_name=BTC_USDT&timeframe=1m
 			endpoint = "http://dummy.restapiexample.com/api/v1"; 
 			RestAssured.baseURI = configutlities.endpoint;
 			break;

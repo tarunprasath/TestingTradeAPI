@@ -11,7 +11,7 @@ public class GetEmployeeDetails {
 	public void GetAllEmpolyeeDetails()
 	{   
 		
-		Response response = RestAssured.given().get("/employees");
+		Response response = RestAssured.given().get("public/get-trades");
 		
 		//Validate the response
 		int statusCode = response.getStatusCode();
